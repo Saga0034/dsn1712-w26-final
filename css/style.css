@@ -1,0 +1,267 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+.wrapper{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+header .wrapper {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+
+    display: flex;
+    flex-direction: row;   
+    list-style: none;
+    gap: 20px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+#sweetheart-affair .wrapper img{
+    
+   max-width: 100%;
+    border-radius: 4px;
+}
+
+#sweetheart-affair .photos{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px; 
+}
+
+
+#sweetheart-affair img:nth-child(1){
+
+    grid-column: 1/span 3;
+}
+
+h1{
+ 
+    font-size: 2.027rem;
+    font-weight: normal;
+}
+
+h2{
+
+    font-size: 1.802rem;
+    text-align: center;
+}
+
+h3{
+
+    font-size: 1.266rem;
+}
+
+#sweetheart-affair a{
+    
+    padding: .5em 1em;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+#behind-dough{
+
+    background-color:  #f8fafc;
+}
+
+#what-saying{
+
+    color: #fff;
+    background-color: #000;
+}
+
+#what-saying article{
+
+    padding-bottom: 2em;
+}
+
+#try-with .flavors{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#try-with article img{
+
+    max-width: 100%;
+    border-radius: 12px;
+
+}
+
+#try-with article {
+
+    text-align: center;
+    background-color: #f8fafc;
+    border-radius: 12px;
+}
+
+footer{
+
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+
+    #sweetheart-affair .photos{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+
+    } 
+
+   #sweetheart-affair img:nth-child(1){
+
+    grid-column: 1/span 1;
+
+    }
+
+    #behind-dough .backstory{
+
+            display: flex;
+            gap: 20px;
+           
+    }   
+
+
+        #what-saying .quotes{
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+        #what-saying .quotes article{
+
+        width: 30%
+    }
+
+    #try-with .flavors{
+
+        display: flex;
+        
+        }
+}
+
+
+@media screen and (min-width: 960px){
+
+    #sweetheart-affair .photos{
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    
+        
+    } 
+
+     #sweetheart-affair .wrapper{
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #behind-dough .backstory{
+
+            display: flex;
+            gap: 20px;
+           
+        }
+
+
+     #what-saying .quotes{
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+     #what-saying .quotes article{
+
+        width: 30%
+        }
+
+    #try-with .flavors{
+
+        display: flex;
+        
+        }
+}
+
+
+
+@media screen and (min-width: 1200px){
+
+    #images .photos{
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        
+    } 
+
+    #sweetheart-affair .wrapper{
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
+        #behind-dough .backstory{
+
+            display: flex;
+            gap: 20px;
+           
+        }
+
+
+        #what-saying .quotes{
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+        #what-saying .quotes article{
+
+        width: 30%
+    }
+
+    #try-with .flavors{
+
+        display: flex;
+        
+        }
+}
+
